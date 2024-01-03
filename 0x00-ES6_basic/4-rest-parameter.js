@@ -1,4 +1,4 @@
 export default function returnHowManyArguments(...args) {
-	var sum = args.length;
+	let sum = args.length;
 	return sum;
 }
