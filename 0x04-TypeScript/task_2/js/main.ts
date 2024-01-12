@@ -72,10 +72,7 @@ type Subjects = 'Math' | 'History';
 function teachClass(todayClass: Subjects): string {
   if (todayClass === 'Math') {
     return 'Teaching Math';
-  } else if (todayClass === 'History') {
-    return 'Teaching History';
   } else {
-  // This branch is for completeness, assuming you only want 'Math' or 'History'
-    return 'Unknown subject';
+    return 'Teaching History';
   }
 }
