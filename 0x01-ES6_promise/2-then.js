@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 export default function handleResponseFromAPI(promise) {
   promise
-    .then(() => {
+    .then((resolvedValue) => {
       console.log('Got a response from the API');
       return {
         status: 200,
