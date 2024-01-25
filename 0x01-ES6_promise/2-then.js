@@ -1,15 +1,15 @@
 /* eslint-disable no-console */
 export default function handleResponseFromAPI(promise) {
-  promise
-    .then((resolvedValue) => {
+  return promise
+    .then(() => {
       console.log('Got a response from the API');
       return {
         status: 200,
         body: 'success',
       };
     })
-    .catch((rejectedError) => {
-      console.error(rejectedError);
+    .catch(() => {
+      console.log('Got a response from the API');
       return new Error();
     });
 }
